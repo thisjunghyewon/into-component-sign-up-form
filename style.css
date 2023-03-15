@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --fc-main: white;
+    --fc-dark: hsl(249, 10%, 26%);
+    --fc-gray: hsl(246, 25%, 77%);
+    --fc-error:hsl(0, 100%, 74%);
+
+    --bg-col:hsl(0, 100%, 74%);
+    --bg-col-form: white;
+    --box-col-green:hsl(154, 59%, 51%);
+    --box-col-green-focus:hsla(154, 59%, 51%, 0,5);
+    --box-col-purple:hsl(248, 32%, 49%);
+
+    --fw-xs: 400;
+    --fw-s: 500;
+    --fw-m: 600;
+    --fw-l: 700;
+
+    --fs-regular: 1rem;
+    --fs-heading: 2.5rem;
+    --fs-small:0.75rem;
+    --fs-x-small:0.55rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: var(--fs-regular);
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    background: var(--bg-col) url(./images/bg-intro-desktop.png) no-repeat center fixed;
+}
+
+
+.wrap {
+    display: flex;
+    height: 100vh;
+    width:62%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    
+    width: 50%;
+    margin-right: 2.5rem;
+    
+}
+
+.left h1 {
+    font-weight: var(--fw-l);
+    font-size: var(--fs-heading);
+    color: var(--fc-main);
+    margin-bottom: 2.3rem;
+    line-height: 2.7rem;
+    max-width: 30rem;
+}
+
+.left p {
+    font-size: var(--fs-regular);
+    color: var(--fc-main);
+    font-weight: var(--fw-xs);
+    line-height: 1.6rem;
+    max-width: 35rem;
+}
+
+.right {
+    text-align: center;
+    width: 50%;
+    /* max-width: 30rem; */
+    
+}
+
+.right .free {
+    font-size: var(--fs-regular);
+    color: var(--fc-main);
+    font-weight: var(--fw-xs);
+    background-color: var(--box-col-purple);
+    border-radius: 8px;
+    box-shadow: 0 5px hsla(0, 0%, 23%, 0.308);
+    padding: 0.8rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.right .free span {font-weight: var(--fw-m);}
+
+.right .free:hover {
+    background-color: #6559b1;
+}
+
+.right .free:active {
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/* .agree {
+    color: var(--fc-gray);
+    font-size: 0.65rem;
+}
+
+.agree a span {
+    color: var(--fc-error);
+    font-weight: var(--fw-l);
+    cursor: pointer;
+    display: inline-block;
+} */
+
+.form {
+    padding: 30px 40px;
+    background-color: var(--bg-col-form);
+    border-radius: 8px;
+    box-shadow: 0 5px hsla(0, 0%, 23%, 0.308);
+    padding: 2rem 2rem 2.5rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 1.05rem 0;
+    font-weight: var(--fw-m);
+    font-size: 0.85rem;
+    font-family: inherit;
+    border: solid 1px var(--fc-gray);
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border: solid 2px var(--fc-dark);
+    appearance: none;
+    -webkit-appearance: none;
+    outline:none !important;
+}
+
+
+
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+
+}
+
+.form button {
+    background-color: var(--box-col-green);
+    color: var(--fc-main);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0.1rem hsla(0, 0%, 19%, 0.308);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* .form button:focus {
+    background-color: var(--box-col-green-focus);
+}
+
+.form button:hover {
+    background-color: #39d18f;
+} */
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+.form-control.error input {
+    border-color: var(--fc-error);
+}
+
+.form-control.error small {
+    color: var(--fc-error);
+    font-size: 0.8rem;
+    visibility: visible;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0.25rem;
+    font-weight: var(--fw-m);
+}
+
+
+.icon {
+    position: absolute;
+    right: 1.4rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    top: 1.6rem;
+    color: var(--fc-error);
+    visibility: hidden;
+    
+}
+
+.form-control.error icon {
+    visibility: visible;
+}
+
+
