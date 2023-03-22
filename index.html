@@ -9,70 +9,60 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; position: fixed; left: 50%; bottom: 10%; transform: translate(-50%, -50%);}
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
-<div class="wrap">
-  <div class="left">
-    <h1>
-      Learn to code by watching others
-    </h1>
-    <p>
-      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-      but understanding how developers think is invaluable. 
-    </p>
-  </div>
-  <div class="right">
-    <button class="free">
-      <span>Try it free 7 days</span> then $20/mo. thereafter
-    </button>
+<div class="contatiner">
+  <div>
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+  </div> <!-- left side-->
 
-      
-        <form class="form" id="form">
-          <div class="form-control">
-            <input type="text" id="first" placeholder="First Name">
-            <img class="icon hidden" id="icon" src="./images/icon-error.svg" alt="error icon">
-            <small>Error message</small>
-          </div>
+  <div>
+    <div class="box box-blue">
+      <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+    </div>
 
-          <div class="form-control">
-            <input type="text" id="last" placeholder="Last Name">
-            <img class="icon hidden" id="icon" src="./images/icon-error.svg" alt="error icon">
-            <small>Error message</small>
-          </div>
+    <form class="box" id="form">
+      <div class="form-control">
+        <label for="first-name" aria-label="hidden"></label>
+        <input type="text" id="firstname" placeholder="First Name">
+        <img src="./images/icon-error.svg" alt="error icon">
+        <small></small>
+      </div>
+      <div class="form-control">
+        <label for="last-name" aria-label="hidden"></label>
+        <input type="text" id="lastname" placeholder="Last Name">
+        <img src="./images/icon-error.svg" alt="error icon">
+        <small></small>
+      </div>
+      <div class="form-control">
+        <label for="email" aria-label="hidden"></label>
+        <input type="email" id="email" placeholder="Email Address">
+        <img src="./images/icon-error.svg" alt="error icon">
+        <small></small>
+      </div>
+      <div class="form-control">
+        <label for="password" aria-label="hidden"></label>
+        <input type="password" id="password" placeholder="Password">
+        <img src="./images/icon-error.svg" alt="error icon">
+        <small></small>
+      </div>
+      <button>Claim your free trial</button>
+      <small>By clicking the button, you are agreeing to our <a>Terms and Services</a></small>
+    </form>
 
-          <div class="form-control">
-            <input type="email" id="email" placeholder="Email Address">
-            <img class="icon hidden" id="icon" src="./images/icon-error.svg" alt="error icon">
-            <small>Error message</small>
-          </div>
-          
-          <div class="form-control">
-            <input type="password" id="password" placeholder="Password">
-            <img class="icon hidden" id="icon" src="./images/icon-error.svg" alt="error icon">
-            <small>Error message</small>
-          </div>
-          
-          <button>Claim your free trial</button>
-        </form>
-          <p class="agree">By clicking the button, you are agreeing to our <a href="#"><span>Terms and Services</span></a></p>
-
-</div>
-</div>
-  
-  
-
-   
-
-  
+  </div> <!-- right side-->
+</div> <!--Container-->
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Hyewon Jung</a>.
     </p>
   </footer>
   <script  src="./script.js"></script>
